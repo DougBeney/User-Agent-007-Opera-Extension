@@ -21,3 +21,5 @@ Use this extension to easily assign user-agents to specific websites.
 [Download On The Opera Web Store](#) (Coming Soon!)
 
 [![Beerpay](https://beerpay.io/DougBeney/User-Agent-007-Opera-Extension/badge.svg)](https://beerpay.io/DougBeney/User-Agent-007-Opera-Extension)
+
+These 🔥 lines of code were carefully created by [Doug Beney](https://dougbeney.com/)
