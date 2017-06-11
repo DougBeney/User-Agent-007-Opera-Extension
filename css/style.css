@@ -1,0 +1,96 @@
+body{
+	opacity: 1;
+	animation: fadeIn 2s;
+	min-width: 600px;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.options-container{
+	padding: 20px 0;
+	max-width: 400px;
+}
+.options-container input,.options-container select{
+	width: 100%;
+}
+.custom-user-agents {
+    display: inline-block;
+    margin: 10px 0;
+}
+button{
+	width: 100%;
+	transition: 100ms ease-in;
+}
+button#save {
+    color: white;
+    background: #58ca58;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+	border: 0;
+}
+button#save:focus, button#save:active{
+	outline: 0;
+}
+button#save:hover {
+	border: 0;
+    color: white;
+    background: #4fb94f;
+    text-shadow: 1px 3px 2px rgba(0,0,0,0.2);
+}
+.footer{
+	display: inline-block;
+	margin-top: 10px;
+}
+#delete-agent {
+    margin-top: 6px;
+	text-align: center;
+	color: #363636;
+	border: 1px solid #ccc;
+	border-radius: 9999px;
+	font-family: verdana;
+}
+#delete-agent:hover {
+    font-weight: bold;
+	background: rgb(233, 233, 233);
+	cursor: pointer;
+}
+p.status {
+    position: absolute;
+	opacity: 1;
+	z-index: 999;
+    top: -100px;
+    left: calc(50% - 100px);
+	width: 200px;
+	box-sizing: border-box;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 100;
+	font-size: 15px;
+    color: #35c235;
+    background: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+	animation: notification-animation 1.7s;
+	animation-fill-mode: forwards;
+}
+@keyframes notification-animation {
+	0% {
+		top: -100px;
+	}
+	30% {
+		top: 20px;
+	}
+	60% {
+		top: 20px;
+	}
+	100% {
+		top: -100px;
+	}
+}

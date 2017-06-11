@@ -1,0 +1,40 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="../css/skeleton.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<script src="../js/UserAgentList.js"></script>
+	<script src="../js/jQuery.js"></script>
+	<script src="../js/json2.js"></script>
+	<script src="../js/options.js"></script>
+</head>
+
+<body>
+	<div class="container options-container">
+		<h1>User-Agent 007</h1>
+		<row>
+			<div class="six columns">
+				<label>Domain:</label>
+			</div>
+			<div class="six columns">
+				<label>User Agent:</label>
+			</div>
+		</row>
+		<div class="custom-user-agents">
+		</div>
+		<row>
+			<div class="twelve columns">
+				<button type="button" id="add-new">Add New</button>
+				<button type="button" id="save">Save Settings</button>
+			</div>
+		</row>
+		<row class="footer">
+			<p><b>Note #1:</b> Do not use subdomains or add "www". Adding the root domain will automatically enable that particular user agent across all of its subdomains.</p>
+			<p><b>Note #2:</b> If the user agent didn't change immediately on refresh, refresh the page again and it should work.</p>
+		</row>
+	</div>
+
+</body>
+
+</html>

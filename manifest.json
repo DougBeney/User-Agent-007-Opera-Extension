@@ -1,0 +1,28 @@
+{
+	"name": "User-Agent 007",
+	"version": "0.5.0",
+	"description": "Use different user agents for different websites.",
+	"homepage_url": "https://dougbeney.com/",
+    "manifest_version": 2,
+	"options_page": "html/options.html",
+    "background": {
+        "page": "html/background.html"
+    },
+	"icons": {
+	    "16": "icon/icon-16.png",
+	    "48": "icon/icon-48.png",
+	    "128": "icon/icon-128.png"
+	},
+
+	"browser_action": {
+	    "default_icon": "icon/icon-19.png",
+	    "default_popup": "html/options.html"
+	},
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"<all_urls>",
+		"tabs",
+		"storage"
+	]
+}
