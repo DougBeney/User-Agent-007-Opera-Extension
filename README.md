@@ -4,13 +4,13 @@ Tired of having to switch over to another browser just to access a specific web 
 
 So was I! Then, I created User-Agent 007.
 
-**This extension is even cool than it's name!**
+**This extension is even cool than its name!**
 
 Use this extension to easily assign user-agents to specific websites.
 
 [![Beerpay](https://beerpay.io/DougBeney/User-Agent-007-Opera-Extension/badge.svg)](https://beerpay.io/DougBeney/User-Agent-007-Opera-Extension)
 
-[Download On The Opera Web Store](#) (Coming Soon!)
+[Download On The Opera Web Store](#) (Under moderation. Upload the zip in /releases if you are super eager.)
 
 ## Screenshots
 
