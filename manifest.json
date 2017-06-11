@@ -13,7 +13,11 @@
 	    "48": "icon/icon-48.png",
 	    "128": "icon/icon-128.png"
 	},
-
+	"content_scripts": [{
+        "matches": ["*://*/*"],
+        "run_at": "document_start",
+        "js": ["js/content.js"]
+    }],
 	"browser_action": {
 	    "default_icon": "icon/icon-19.png",
 	    "default_popup": "html/options.html"
@@ -22,6 +26,7 @@
 		"webRequest",
 		"webRequestBlocking",
 		"<all_urls>",
-		"storage"
+		"storage",
+		"tabs"
 	]
 }

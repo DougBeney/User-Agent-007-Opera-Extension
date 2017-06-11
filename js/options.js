@@ -42,7 +42,10 @@ var UIBuilder = {
 			UIBuilder.update();
 			var $saveMessage = $('<p class="status">Saved!</p>');
 			$('body').prepend($saveMessage);
-			$saveMessage.delay(1800).fadeOut();
+			$saveMessage.delay(1800).fadeOut(function(){
+				$(this).remove();
+			});
+			chrome.tabs.reload();
 		});
 	},
 	update: function(callback){
