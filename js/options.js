@@ -11,6 +11,19 @@ $(function(){
 		UIBuilder.save();
 	});
 
+	var expanded = false;
+
+	$('.collapse_msg').click(function(){
+		var target = $(this).data('target');
+		$(target).slideToggle();
+		expanded = !expanded;
+		if(expanded){
+			$(this).text('Hide Tips');
+		}else{
+			$(this).text('Show Tips');
+		}
+	});
+
 });
 
 var UIBuilder = {

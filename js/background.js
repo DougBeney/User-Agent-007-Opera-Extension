@@ -17,6 +17,15 @@ var handler = function(details) {
     var TheUserAgent = "";
 
     if (details.tabId >= 0) {
+        var allSitesAgent = false;
+        var allSitesAgent_Agent = "";
+        for (var d in userSettings) {
+            if(userSettings[d].domain == "*"){
+                allSitesAgent = true;
+                allSitesAgent_Agent = userSettings[d].agent;
+                break;
+            }
+        }
         for (var d in userSettings) {
             var userDomain = extractHostname(userSettings[d].domain);
             var theCurHostname = extractHostname(details.url);
@@ -30,8 +39,16 @@ var handler = function(details) {
                     }
                 }
                 break;
+            }else if(allSitesAgent){
+                for (var i = 0, l = headers.length; i < l; ++i) {
+                    if (headers[i].name == 'User-Agent') {
+                        headers[i].value = allSitesAgent_Agent;
+                        break;
+                    }
+                }
             }
         }
+
     }
 
     blockingResponse.requestHeaders = headers;

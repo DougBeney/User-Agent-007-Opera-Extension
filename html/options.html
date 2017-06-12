@@ -29,10 +29,15 @@
 				<button type="button" id="save">Save Settings</button>
 			</div>
 		</row>
-		<row class="footer">
+		<div class="clearfix"></div>
+		<hr style="margin-bottom: 10px; margin-top: 30px;">
+		<h4 class="tips-heading">Tips:</h4>
+		<row class="footer collapsable collapsed" id="tips">
+			<p><b>Tip:</b> Enter <code style="border-color: #ccc">*</code> (an asterisk) into the domain field to enable a particular user-agent across all sites that you didn't assign a user-agent to.</p>
 			<p><b>Note #1:</b> Do not use subdomains or add "www". Adding the root domain will automatically enable that particular user agent across all of its subdomains.</p>
 			<p><b>Note #2:</b> If the user agent didn't change immediately on refresh, refresh the page again and it should work.</p>
 		</row>
+		<button type="button" class="collapse_msg"data-target="#tips">Show Tips</button>
 	</div>
 
 </body>
